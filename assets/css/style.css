@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+:root {
+  /* Define custom variable */
+  --modal-duration: 1s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #30336b;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 15px;
+}
+
+.title {
+  margin: 10px 0px 0px 0px;
+}
+
+p {
+  margin: 15px 0px 0px 0px;
+  text-align: justify;
+}
+
+button,
+input[type="submit"] {
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: #be2edd;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#sign-up-button{
+  margin-top: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page {
+  padding: 0px 15px;
+  width: 800px;
+  max-width: 100%;
+}
+
+h2 {
+  margin: 25px 0px 0px 0px;
+}
+
+ul {
+  margin: 15px 0px 0px 0px;
+}
+
+.open-side-bar-button-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 20px;
+}
+
+.open-side-bar-button {
+  background-color: #22244b;
+  font-size: 150%;
+  padding: 8px 12px;
+}
+
+.sign-up-modal-container {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+.sign-up-modal-container.show {
+  display: block;
+}
+
+.sign-up-modal {
+  width: 400px;
+  max-width: 100%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Bind the element to the modalopen keyfram */
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+.close-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: transparent;
+  font-size: 25px;
+  margin: 0 0;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px;
+}
+
+.modal-title {
+  margin: 0 0;
+}
+
+.modal-content {
+  padding: 10px 20px;
+}
+
+.sign-up-modal .form-input {
+  width: 100%;
+  padding: 8px;
+}
+
+.modal-form div {
+  margin: 15px 0px;
+}
+
+.modal-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.submit-button {
+  display: block;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+.user-image {
+  width: 100px;
+  height: 100px;
+}
+
+.side-bar {
+  position: fixed;
+  background-color: #30336b;
+  width: 200px;
+  height: 100vh;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  border-right: 2px solid rgba(200, 200, 200, 0.1);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.side-bar.show {
+  transform: translateX(0%);
+}
+
+.logo-continer {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.logo-continer img {
+  border-radius: 50%;
+}
+
+.side-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side-bar ul li {
+  border-bottom: 2px solid rgba(200, 200, 200, 0.1);
+  padding: 20px;
+}
+
+.side-bar ul li:first-of-type {
+  border-top: 2px solid rgba(200, 200, 200, 0.1);
+}
+
+.side-bar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

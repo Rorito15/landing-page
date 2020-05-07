@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Landing Page</title>
+</head>
+
+<body>
+  <div class="side-bar" id="side-bar">
+    <nav>
+      <div class="close-button" id="close-side-bar-button">
+        <i class="fa fa-times"></i>
+      </div>
+      <div class="logo-continer">
+        <img class="user-image" src="https://randomuser.me/api/portraits/lego/6.jpg" alt="user-image">
+      </div>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+        <li>
+          <a href="#">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <header>
+    <div class="open-side-bar-button-container">
+      <button class="open-side-bar-button" id="open-side-bar-button">
+        <i class="fa fa-bars fa-ex"></i>
+      </button>
+    </div>
+    <h1 class="title">My Landing Page</h1>
+    <p class="page-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <button class="sign-up-button" id="sign-up-button">Sign Up</button>
+  </header>
+
+  <main>
+    <div class="page">
+      <h2>What is this landing page about?</h2>
+      <p class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia cum voluptas sequi dicta voluptatum sed, porro
+        at
+        facere itaque non dolores voluptates et id recusandae aliquid ex qui placeat optio?
+        Nisi inventore voluptate, incidunt quas iusto cumque maiores deleniti soluta sed nemo, quae magnam. Placeat ad
+        error a iusto incidunt quam rerum porro saepe expedita, dolor possimus autem, deserunt nam.
+        Maiores quisquam, saepe eveniet soluta porro esse dolores earum, ut ducimus exercitationem magnam mollitia,
+        nesciunt possimus? Eos voluptatum, cum consequuntur vel eum magni quo hic, nemo sed temporibus accusamus
+        voluptate.
+      </p>
+      <p class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia cum voluptas sequi dicta voluptatum sed, porro
+        at
+        facere itaque non dolores voluptates et id recusandae aliquid ex qui placeat optio?
+      </p>
+      <h2>Tell Me More</h2>
+      <p class="content">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta excepturi architecto libero ab placeat magni
+        eveniet. Enim vel atque iste distinctio adipisci voluptas exercitationem necessitatibus sapiente! Laborum
+        voluptate sit ut?
+      </p>
+      <h2>Benefits</h2>
+      <ul>
+        <li>Lifetime Access</li>
+        <li>30 Day Money Back</li>
+        <li>Tailored Customer Support</li>
+      </ul>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem illum repellendus expedita maiores eum omnis,
+        labore perferendis repudiandae. Fuga quo ipsum odio adipisci? Modi magni, unde iusto fugit sunt in? Sapiente,
+        porro ad vitae saepe nemo dolor suscipit eos. Officia rerum voluptates sunt eaque nesciunt. Vitae consequatur,
+        natus
+        deleniti maxime incidunt perspiciatis id vel odit mollitia quis esse veniam numquam.</p>
+    </div>
+  </main>
+
+  <div class="sign-up-modal-container" id="sign-up-modal-container">
+    <div class="sign-up-modal">
+      <button class="close-button" id="close-modal-button">
+        <i class="fa fa-times"></i>
+      </button>
+      <header class="modal-header">
+        <h2 class="modal-title">Sign Up</h2>
+      </header>
+      <div class="modal-content">
+        <p>Register with us to get offers, support and more!</p>
+        <form class="modal-form">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name-input" class="form-input" placeholder="Enter Name">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email-input" class="form-input" placeholder="Enter Email">
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password-input" class="form-input" placeholder="Enter Password">
+          </div>
+          <div>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" name="confirm-password" id="confirm-password-input" class="form-input"
+              placeholder="Confirm Password">
+          </div>
+          <input class="submit-button" type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="build/app.bundle.js"></script>
+</body>
+
+</html>
